@@ -1,0 +1,31 @@
+.how-to-apply {
+    height: 700px;
+}
+
+.how-to-apply__container {
+    display: flex;
+}
+
+.how-to-apply__header {
+    margin-top: 100px;
+    min-width: 166px;
+    height: 50px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #EE4D47;
+}
+
+.how-to-apply__paragraph {
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    width: 455px;
+    height: 287px;
+}
+
+.how-to-apply__illustration {
+    padding-right: 100px;
+}

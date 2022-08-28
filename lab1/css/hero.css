@@ -1,0 +1,42 @@
+.hero {
+    display: flex;
+    height: 1000px;
+    background-image: url(../images/background_scene.svg);
+    background-repeat: no-repeat;
+    background-position: -30% 50%;
+    background-size: 2000px;
+}
+
+.header__nav-item {
+    color: white;
+}
+
+.hero__header {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 100px;
+    color: white;
+    width: 741px;
+    height: 300px;
+    padding-top: 90px;
+    padding-left: 240px;
+}
+
+.hero__get-started {
+    display: flex;
+    padding-top: 60px;
+    padding-left: 245px;
+}
+
+.hero__get-started__button {
+    width: 200px;
+    text-justify: start;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero__car-image {
+    padding-top: 70px;
+    margin-left: -100px;
+}

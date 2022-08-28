@@ -1,0 +1,75 @@
+.clients {
+    height: 500px;
+}
+
+.clients__about-us {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    width: 166px;
+    height: 50px;
+    color: #EE4D47;
+    padding-left: 700px;
+}
+
+.clients__awesome {
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 140%;
+    color: #402B2B;
+    width: 453px;
+    height: 67px;
+    padding-left: 570px;
+}
+
+.first-block,
+.second-block,
+.third-block {
+    width: 420px;
+    height: 360px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.first-quote,
+.second-quote,
+.third-quote {
+    width: 320px;
+    height: 140px;
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 60px;
+    padding-left: 50px;
+}
+
+.first-author,
+.second-author,
+.third-author {
+    padding-top: 60px;
+    padding-left: 48px;
+    display: flex;
+}
+
+.first-author-name,
+.second-author-name,
+.third-author-name {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    width: 160px;
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.clients__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
