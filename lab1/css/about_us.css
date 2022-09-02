@@ -1,0 +1,56 @@
+.about-us {
+    height: 700px;
+}
+
+.about-us__header {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #EE4D47;
+}
+
+.about-us__article {
+    padding-top: 200px;
+    padding-left: 150px;
+}
+
+.about-us__paragraph {
+    font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    width: 470px;
+    height: 156px;
+    padding-top: 40px;
+}
+
+.about-us__rectangle {
+    width: 560px;
+    height: 160px;
+    left: 251px;
+    margin-top: 70px;
+    background-color: #FCDDD4;
+    border-left: solid #ed4d47;
+    border-width: 10px;
+    border-radius: 5px;
+}
+
+.about-us__second-paragraph {
+    width: 460px;
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin-left: 50px;
+    padding-top: 30px;
+}
+
+.about-us__container {
+    display: flex;
+}
+
+.about-us__illustration {
+    margin-top: 200px;
+    margin-left: 75px;
+}

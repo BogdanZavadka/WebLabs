@@ -1,0 +1,17 @@
+@import "./normalise.min.css";
+
+@import "./reset.min.css";
+
+@import "./global.css";
+
+@import "./header.css";
+
+@import "./hero.css";
+
+@import "./about_us.css";
+
+@import "./how_to_apply.css";
+
+@import "./clients.css";
+
+@import "./footer.css"

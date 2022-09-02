@@ -1,0 +1,19 @@
+footer {
+    height: 200px;
+    background-color: #EE4D47;
+    margin-top: 184px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 90px;
+}
+
+.copyright {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #F8F9FA;
+}

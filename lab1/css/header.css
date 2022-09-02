@@ -1,0 +1,17 @@
+.header__trafico {
+    padding-left: 200px;
+}
+
+.header {
+
+    display: flex;
+    padding-top: 30px;
+    padding-right: 450px;
+    align-items: center;
+
+}
+
+ul {
+    margin-left: 400px;
+    display: flex;
+}

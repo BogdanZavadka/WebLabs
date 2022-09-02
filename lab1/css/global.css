@@ -1,0 +1,36 @@
+body {
+    font-family: 'DM Serif Display', 'Roboto', 'Rubik';
+    background-color: #E5E5E5;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    display: block;
+    padding-right: 100px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    min-width: 61px;
+}
+
+button {
+    height: 60px;
+    border: 0;
+    background-color: #ee4d47;
+    border-radius: 5px;
+    font-family: 'Rubik';
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+    min-width: 158px;
+}
