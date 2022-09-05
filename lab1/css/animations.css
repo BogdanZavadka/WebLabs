@@ -1,0 +1,27 @@
+@keyframes background-change {
+    0% {
+        background-color: #FFCABF;
+    }
+
+    50% {
+        background-color: #FFA390;
+    }
+
+    100% {
+        background-color: #FFCABF;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}

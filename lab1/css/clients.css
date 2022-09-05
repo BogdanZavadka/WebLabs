@@ -29,7 +29,7 @@
 .third-block {
     width: 420px;
     height: 360px;
-    background: #FFFFFF;
+    background: white;
     border-radius: 10px;
     margin-left: 20px;
 }
@@ -72,4 +72,55 @@
     display: flex;
     justify-content: center;
     padding-top: 50px;
+}
+
+.clients__container>* {
+    transition: all 0.2s ease-in-out;
+}
+
+.clients__container>*:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 320px) {
+    .clients__about-us {
+        padding-left: 24rem;
+    }
+
+    .clients__awesome {
+        padding-left: 16rem;
+    }
+
+    .clients__container {
+        justify-content: space-between;
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+
+    }
+
+
+
+    .first-block,
+    .second-block,
+    .third-block {
+        width: 87vw;
+    }
+
+    .first-quote,
+    .second-quote,
+    .third-quote {
+        width: 65vw;
+        padding-top: 30px;
+    }
+
+    .first-author-name,
+    .second-author-name,
+    .third-author-name {
+        padding-top: 50px;
+    }
+
+    .author-photo {
+        padding-top: 45px;
+    }
 }

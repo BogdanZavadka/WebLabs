@@ -48,9 +48,26 @@
 
 .about-us__container {
     display: flex;
+    justify-content: start;
 }
 
 .about-us__illustration {
     margin-top: 200px;
     margin-left: 75px;
+}
+
+@media screen and (max-width: 320px) {
+    .about-us {
+        margin-top: 200px;
+    }
+
+    .about-us__illustration {
+        margin-left: -110px;
+        margin-top: 150px;
+    }
+
+    .about-us__article {
+        margin-right: -40px;
+        margin-left: -100px;
+    }
 }

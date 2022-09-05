@@ -17,3 +17,13 @@ footer {
     line-height: 30px;
     color: #F8F9FA;
 }
+
+@media screen and (max-width: 320px) {
+    .footer-container {
+        gap: 150px;
+    }
+
+    footer {
+        width: 960px;
+    }
+}
