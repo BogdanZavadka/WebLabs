@@ -36,6 +36,12 @@ ul {
     }
 }
 
+@media screen and (max-width: 440px) {
+    ul {
+        margin-left: 10em;
+    }
+}
+
 @media screen and (max-width: 320px) {
 
     .hamburger-menu {

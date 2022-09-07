@@ -18,6 +18,17 @@ footer {
     color: #F8F9FA;
 }
 
+@media screen and (max-width: 1200px) {
+    .footer-container {
+        gap: 20.5em;
+        padding-left: 100px;
+    }
+
+    footer {
+        width: fit-content;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .footer-container {
         gap: 150px;

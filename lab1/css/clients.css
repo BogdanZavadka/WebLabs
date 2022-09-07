@@ -72,6 +72,9 @@
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .clients__container>* {
@@ -82,24 +85,58 @@
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 1200px) {
+
+    .clients__about-us {
+        padding-left: 24em;
+    }
+
+    .clients__awesome {
+        padding-left: 10em;
+    }
+
+    .clients__container {
+        justify-content: space-between;
+    }
+
+    .first-block,
+    .second-block,
+    .third-block {
+        width: 30em;
+        max-width: 400px;
+        /* min-width: 400px; */
+    }
+
+    .first-quote,
+    .second-quote,
+    .third-quote {
+        width: 15rem;
+        padding-top: 30px;
+    }
+
+    .first-author-name,
+    .second-author-name,
+    .third-author-name {
+        padding-top: 50px;
+    }
+
+    .author-photo {
+        padding-top: 45px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .clients__about-us {
         padding-left: 24rem;
     }
 
+    .clients__container {
+        justify-content: space-between;
+    }
+
     .clients__awesome {
         padding-left: 16rem;
     }
-
-    .clients__container {
-        justify-content: space-between;
-        animation-name: floating;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-
-    }
-
-
 
     .first-block,
     .second-block,
