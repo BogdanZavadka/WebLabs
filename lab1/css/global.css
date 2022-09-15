@@ -1,11 +1,18 @@
 body {
     font-family: 'DM Serif Display', 'Roboto', 'Rubik';
     background-color: #E5E5E5;
+    justify-content: center;
+    max-width: 1100px;
+}
+
+section {
+    max-width: 50vw;
+
 }
 
 .container {
-    max-width: 1600px;
     margin: 0 auto;
+    max-width: 50rem;
 }
 
 a {
@@ -35,6 +42,13 @@ button {
     min-width: 158px;
 }
 
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+
 @media screen and (max-width: 440px) {
     li {
         padding-right: 3rem;
@@ -51,6 +65,6 @@ button {
         animation-name: background-change;
         animation-duration: 3s;
         animation-iteration-count: infinite;
-        max-width: 1000px;
+        max-width: 900px;
     }
 }

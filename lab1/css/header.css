@@ -1,5 +1,5 @@
 .header__trafico {
-    padding-left: 8rem;
+    padding-left: 4rem;
 }
 
 .header {
@@ -7,6 +7,7 @@
     padding-top: 30px;
     padding-right: 450px;
     align-items: center;
+    max-width: 50rem;
 }
 
 ul {
@@ -28,11 +29,11 @@ ul {
 
 @media screen and (max-width: 850px) {
     ul {
-        margin-left: 20rem;
+        margin-left: 6.4rem;
     }
 
     .header__trafico {
-        padding-left: 10rem;
+        padding-left: 8rem;
     }
 }
 
@@ -48,16 +49,19 @@ ul {
         display: block;
         transform: scale(0.1);
         margin: 40px 40px;
+        padding-left: 300px;
     }
 
     .header {
         margin-top: -200px;
         padding-top: 0;
+        max-width: 900px;
     }
 
     .header__contact-us {
-        margin-left: -250px;
+        margin-left: -350px;
         margin-top: 10px;
+        margin-right: -100px;
     }
 
     .header__nav {
@@ -76,7 +80,7 @@ ul {
     }
 
     .header__nav.open {
-        clip-path: circle(2000px at top);
+        clip-path: circle(2500px at top);
     }
 
     .header__nav a {
@@ -85,10 +89,9 @@ ul {
     }
 
     .header__nav ul {
-        /* justify-content: space-around; */
         flex-direction: column;
+        margin-left: 30rem;
         height: 100%;
-
     }
 
     .header__nav li {

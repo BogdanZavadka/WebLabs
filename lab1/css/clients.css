@@ -1,5 +1,8 @@
 .clients {
     height: 500px;
+    max-width: 1200px;
+    margin-left: -100px;
+    padding: 0;
 }
 
 .clients__about-us {
@@ -10,7 +13,7 @@
     width: 166px;
     height: 50px;
     color: #EE4D47;
-    padding-left: 700px;
+    padding-left: 34rem;
 }
 
 .clients__awesome {
@@ -21,7 +24,7 @@
     color: #402B2B;
     width: 453px;
     height: 67px;
-    padding-left: 570px;
+    padding-left: 24rem;
 }
 
 .first-block,
@@ -75,6 +78,7 @@
     animation-name: floating;
     animation-duration: 4s;
     animation-iteration-count: infinite;
+    width: 1200px;
 }
 
 .clients__container>* {
@@ -85,18 +89,26 @@
     transform: scale(1.05);
 }
 
+@media screen and (max-width: 800px) {
+    .clients__container {
+        padding-left: 5rem;
+        max-width: 1075px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 
     .clients__about-us {
-        padding-left: 24em;
+        margin-left: 14rem;
     }
 
     .clients__awesome {
-        padding-left: 10em;
+        margin-left: 12rem;
     }
 
     .clients__container {
-        justify-content: space-between;
+        justify-content: center;
+        max-width: 1100px;
     }
 
     .first-block,
@@ -104,7 +116,7 @@
     .third-block {
         width: 30em;
         max-width: 400px;
-        /* min-width: 400px; */
+        height: 25rem;
     }
 
     .first-quote,
@@ -117,11 +129,31 @@
     .first-author-name,
     .second-author-name,
     .third-author-name {
-        padding-top: 50px;
+        margin-top: 3rem;
     }
 
     .author-photo {
-        padding-top: 45px;
+        margin-top: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .clients__about-us {
+        padding-left: 22rem;
+    }
+
+    .clients__awesome {
+        padding-left: 13rem;
+    }
+
+    .clients__container {
+        max-width: 1075px;
+    }
+
+    .first-block,
+    .second-block,
+    .third-block {
+        max-width: 320px;
     }
 }
 
@@ -131,7 +163,9 @@
     }
 
     .clients__container {
-        justify-content: space-between;
+        justify-content: center;
+        padding-left: 6rem;
+
     }
 
     .clients__awesome {
@@ -149,6 +183,7 @@
     .third-quote {
         width: 65vw;
         padding-top: 30px;
+        font-size: 20px;
     }
 
     .first-author-name,
