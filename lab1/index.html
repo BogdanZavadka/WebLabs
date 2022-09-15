@@ -16,26 +16,28 @@
 
 <body>
     <section class="hero">
-        <div class="container">
+        <div class="container-first">
             <header class="header">
                 <div class="header__trafico">
-                    <img src="../images/trafico.svg" alt="TRAFICO">
+                    <img src="./images/trafico.svg" alt="TRAFICO">
                 </div>
-                <nav class="header__nav">
+                <nav id="nav-links" class="header__nav">
                     <ul>
                         <li class="header__nav-item"><a href="">ABOUT</a></li>
                         <li class="header__nav-item"><a href="">HOW TO</a></li>
                         <li class="header__nav-item"><a href="">FAQS</a></li>
                     </ul>
                 </nav>
-                <button>CONTACT US</button>
+                <div class="hamburger-menu" onclick="toggleMenu()"><img src="./images/hamburger.svg" alt="hamburger">
+                </div>
+                <button class="header__contact-us">CONTACT US</button>
             </header>
             <div class="hero__header">Your awesome traffic permit consultant.</div>
             <div class="hero__get-started">
                 <button class="hero__get-started__button">GET STARTED
-                    <img src="../images/pointer.svg" alt="pointer"></button>
+                    <img src="./images/pointer.svg" alt="pointer"></button>
             </div>
-            <div class="hero__car-image"><img src="../images/car.svg" alt="Car image"></div>
+            <div class="hero__car-image"><img src="./images/car.svg" alt="Car image"></div>
         </div>
     </section>
 
@@ -55,7 +57,7 @@
                         </p>
                     </div>
                 </article>
-                <div class="about-us__illustration"><img src="../images/illustration.svg" alt="First illustarrion">
+                <div class="about-us__illustration"><img src="./images/illustration.svg" alt="First illustarrion">
                 </div>
             </div>
         </div>
@@ -64,9 +66,9 @@
     <section class="how-to-apply">
         <div class="container">
             <div class="how-to-apply__container">
-                <div class="how-to-apply__illustration"><img src="../images/how_to_apply_image.svg"
+                <div class="how-to-apply__illustration"><img src="./images/how_to_apply_image.svg"
                         alt="Second illustration"></div>
-                <article>
+                <article class="how-to-apply__article">
                     <h1 class="how-to-apply__header">HOW TO APPLY</h1>
                     <p class="how-to-apply__paragraph">When applying for a traffic permit, there are certain
                         requirements that you must meet that are included in the examination: requirements for
@@ -91,7 +93,7 @@
                         </p>
                     </blockquote>
                     <div class="first-author">
-                        <img src="./images/isak.svg" alt="First Isak">
+                        <img src="./images/isak.svg" alt="First Isak" class="author-photo">
                         <div class="first-author-name">Isak Pettersson</div>
                     </div>
                 </div>
@@ -104,36 +106,40 @@
                         </p>
                     </blockquote>
                     <div class="second-author">
-                        <img src="./images/simon.svg" alt="Simon">
+                        <img src="./images/simon.svg" alt="Simon" class="author-photo">
                         <div class="second-author-name">Simon Sandberg</ndiv>
                         </div>
                     </div>
                 </div>
-                <div class="third-block">
-                    <blockquote>
-                        <p class="third-quote">
-                            An A-Line, or access restriction deed is a property right that has been obtained by CDOT
-                            for the sole purpose of prohibiting direct
-                        </p>
-                    </blockquote>
-                    <div class="third-author">
-                        <img src="./images/isak2.svg" alt="Second Isak">
-                        <div class="third-author-name">Isak Pettersson</div>
+                <div class="block-three">
+                    <div class="third-block">
+                        <blockquote>
+                            <p class="third-quote">
+                                An A-Line, or access restriction deed is a property right that has been obtained by CDOT
+                                for the sole purpose of prohibiting direct
+                            </p>
+                        </blockquote>
+                        <div class="third-author">
+                            <img src="./images/isak2.svg" alt="Second Isak" class="author-photo">
+                            <div class="third-author-name">Isak Pettersson</div>
+                        </div>
                     </div>
                 </div>
             </div>
     </section>
     <section>
         <footer>
-            <div class="container">
-                <div class="footer-container">
-                    <div class="copyright">Copyright @ 2019</div>
-                    <img src="./images/trafico.svg" alt="trafico">
-                    <img src="./images/socials.svg" alt="Social networks">
-                </div>
+
+            <div class="footer-container">
+                <div class="copyright">Copyright @ 2019</div>
+                <img src="./images/trafico.svg" alt="trafico">
+                <img src="./images/socials.svg" alt="Social networks">
             </div>
+
         </footer>
     </section>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

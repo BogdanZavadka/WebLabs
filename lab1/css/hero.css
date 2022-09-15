@@ -1,10 +1,16 @@
 .hero {
     display: flex;
     height: 1000px;
+    margin: 0 auto 0 0;
+}
+
+.container-first {
     background-image: url(../images/background_scene.svg);
     background-repeat: no-repeat;
-    background-position: -30% 50%;
+    background-position: 0% bottom;
     background-size: 2000px;
+    margin: 0 auto;
+    min-width: 1400px;
 }
 
 .header__nav-item {
@@ -34,9 +40,45 @@
     padding-top: 18px;
     display: flex;
     justify-content: space-around;
+    transition: all 0.2s ease-in-out;
+}
+
+.hero__get-started__button:hover {
+    transform: scale(1.2);
 }
 
 .hero__car-image {
     padding-top: 70px;
     margin-left: -100px;
+    max-width: 100vw;
+}
+
+@media screen and (max-width: 1500px) {
+    .container-first {
+        min-width: 81rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-first {
+        min-width: 1075px;
+    }
+
+    .hero {
+        padding-left: -100px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container-first {
+        min-width: 74rem;
+        background-image: none;
+        left: 200px;
+        max-width: 1000px;
+    }
+
+    .hero__header {
+        color: black;
+        padding: 0 50px;
+    }
 }

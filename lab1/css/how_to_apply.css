@@ -29,3 +29,30 @@
 .how-to-apply__illustration {
     padding-right: 100px;
 }
+
+@media screen and (max-width: 800px) {
+    .how-to-apply__article {
+        margin-left: -8rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .how-to-apply__illustration {
+        transform: scaleX(-1);
+        margin-right: -64rem;
+        z-index: -1;
+    }
+
+    .how-to-apply__article {
+        margin-right: -30px;
+    }
+
+    .how-to-apply__paragraph {
+        font-size: 24px;
+    }
+
+    .how-to-apply__container {
+        flex-direction: row-reverse;
+    }
+
+}

@@ -1,7 +1,9 @@
 footer {
     height: 200px;
     background-color: #EE4D47;
-    margin-top: 184px;
+    width: 98.9vw;
+    margin: 184px auto 0;
+    /* max-width: 28.438rem; */
 }
 
 .footer-container {
@@ -16,4 +18,32 @@ footer {
     font-size: 16px;
     line-height: 30px;
     color: #F8F9FA;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-container {
+        gap: 10em;
+        padding-left: 100px;
+    }
+
+    footer {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        /* width: 69.5rem; */
+        width: 1075px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer-container {
+        gap: 150px;
+    }
+
+    footer {
+        width: 76rem;
+    }
 }
