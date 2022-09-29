@@ -1,0 +1,104 @@
+body {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(239, 132, 132);
+}
+
+button {
+    background-color: rgb(87, 202, 181);
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    margin: 50px 35px;
+    font-size: 40px;
+    min-width: 200px;
+}
+
+form {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 200px;
+}
+
+.submit-button {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.count-button {
+    margin-top: -10px;
+}
+
+.container {
+    display: flex;
+
+}
+
+.cat-photo {
+    width: 200px;
+    margin: 10px 25px;
+}
+
+.block {
+    border-radius: 5px;
+    background-color: rgb(174, 179, 184);
+    width: 250px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+aside {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cat-weight {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.back-button {
+    margin: -20px 0 20px;
+}
+
+.back-button-first {
+    margin-top: 5px;
+}
+
+section {
+    max-width: 200px;
+}
+
+.cat {
+    display: flex;
+    justify-content: center;
+}
+
+.total-weight {
+    margin-top: -120px;
+}
+
+.count-button {
+    margin-top: 40px;
+}
