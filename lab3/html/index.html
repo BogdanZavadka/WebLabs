@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <header>Cats</header>
+    <button class="create" onclick="document.location.href='./create.html'">CREATE</button>
+    <div class="container">
+        <section id="section">
+            <button class="sort-button" id="sort-button">SORT CATS BY WEIGHT</button>
+            <button class="back-button-first" id="back-button">BACK</button>
+            <h1>Find cats</h1>
+            <form>
+                <input id="search-input">
+                <button class="submit-button" id="submit-button">SUBMIT</button>
+                <button class="back-button" id="second-back-button">BACK</button>
+            </form>
+            <h1>Count total weight</h1>
+            <button class="count-button" id="count-button">COUNT</button>
+            <h1 class="total-weight" id="total-weight"></h1>
+        </section>
+        <aside id="aside">
+        </aside>
+    </div>
+    <script type="module" src="../js/index.js"></script>
+</body>
+
+</html>
