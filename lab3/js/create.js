@@ -1,5 +1,6 @@
 const createButton = document.getElementById('create-button');
 let cats = [];
+import { postCat } from './api.js';
 
 createButton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -10,12 +11,9 @@ createButton.addEventListener('click', (event) => {
             title,
             weight
         };
-        cats.push(cat);
+        postCat(cat).then(console.log);
         document.getElementById('create-weight').value = '';
         document.getElementById('create-title').value = '';
-        sessionStorage.setItem('cats', JSON.stringify(cats));
-        console.log(JSON.parse(sessionStorage.cats)[0].title);
-        console.log(sessionStorage);
     } else {
         alert('ENTER DATA!!!!');
     }

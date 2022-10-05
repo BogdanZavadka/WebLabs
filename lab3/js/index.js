@@ -7,6 +7,8 @@ const backButton = document.getElementById('back-button');
 const secondBackButton = document.getElementById('second-back-button');
 const totalWeightDiv = document.getElementById('total-weight');
 
+import { getCats, deleteCat } from './api.js';
+
 let cats = [];
 let renderedCats = [];
 
@@ -61,6 +63,7 @@ const countTotalWeight = (cats) => {
 }
 
 const totalWeightTemplate = (totalWeight) => `${totalWeight}`;
+
 const itemTemplate = (item, id) => `
 <div class="block" id="${id}-cat">
     <img src="../cat.jpg" alt="cat" class="cat-photo">
@@ -68,28 +71,54 @@ const itemTemplate = (item, id) => `
     <div class="cat-weight">Cat weight in kilos:</div>
     <div class='edit'>
     <div class="cat-weight-value" id="${id}-cat-weight">${item.weight}</div>
-    <button class='edit-button ${id}-edit-button' id='${id}-edit-button' onclick="document.location.href='./edit.html'">Edit</button>
+    <button class='edit-button ${id}-edit-button' id='${id}-edit-button'">Edit</button>
+    <button class='delete-button' id='${id}-delete-button'">Delete</button>
     </div>
 </div>`
 
-const insertItem = (item, id) => {
-    asideItems.insertAdjacentHTML('beforeend', itemTemplate(item, id));
-    const editButton = document.getElementById(`${id}-edit-button`);
-    editButton.addEventListener('click', (event) => {
-        sessionStorage.setItem('to-edit', id);
-    })
+const insertItem = (item) => {
+    asideItems.insertAdjacentHTML('beforeend', itemTemplate(item, item.id));
+    const editButton = document.getElementById(`${item.id}-edit-button`);
+    const deleteButton = document.getElementById(`${item.id}-delete-button`);
+    editButton.addEventListener('click', onEdit);
+    deleteButton.addEventListener('click', onDelete);
 }
 
 const renderCats = (items) => {
     asideItems.innerHTML = '';
     for (const item of items) {
-        insertItem(item, items.indexOf(item))
+        insertItem(item)
     }
     renderedCats = items;
 }
 
+const onDelete = (item) => {
+    let itemIndex = item.target.id.replace('-delete-button', '');
+    let body = { id: itemIndex };
+    deleteCat(body).then((data) => { document.location.reload(); });
+}
+
+const onEdit = (item) => {
+    let itemIndex = item.target.id.replace('-edit-button', '');
+    sessionStorage.setItem('to-edit', itemIndex);
+    document.location.href = './edit.html'
+}
+
 const addCats = () => {
-    cats = JSON.parse(sessionStorage.cats);
-    renderCats(cats);
+    getCats().then((gotCats) => {
+        for (let cat of gotCats['cat']) {
+            let id = cat[0];
+            let title = cat[1];
+            let weight = cat[2];
+            let catItem = {
+                id,
+                title,
+                weight
+            }
+            cats.push(catItem);
+        }
+        renderCats(cats);
+    })
 }
 addCats();
+

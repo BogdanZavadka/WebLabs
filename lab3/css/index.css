@@ -114,7 +114,7 @@ section {
     height: 20px;
     border: 0;
     border-radius: 5px;
-    margin-left: 60px;
+    margin-left: 10px;
     margin-top: 5px;
     font-size: 15px;
     font-weight: 700;
@@ -126,4 +126,16 @@ section {
 
 .cat-weight-value {
     margin-left: 110px;
+}
+
+.delete-button {
+    background-color: red;
+    width: 60px;
+    height: 20px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 700;
 }
