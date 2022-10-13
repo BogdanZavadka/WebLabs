@@ -1,0 +1,21 @@
+.footer {
+    background-color: rgb(90, 141, 148);
+    display: flex;
+    margin-top: 50px;
+}
+
+.social-medias {
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+}
+
+.socials {
+    display: flex;
+    margin-top: 30px;
+}
+
+.copyright {
+    margin: 10px 600px;
+    padding-top: 20px;
+}
