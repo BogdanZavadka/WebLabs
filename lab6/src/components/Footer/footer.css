@@ -1,7 +1,6 @@
 .footer {
-    background-color: rgb(90, 141, 148);
     display: flex;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .social-medias {
@@ -16,6 +15,17 @@
 }
 
 .copyright {
-    margin: 10px 600px;
+    margin: 10px 570px;
     padding-top: 20px;
+}
+
+hr {
+    margin-top: 0;
+}
+
+.store {
+    font-size: 25px;
+    font-weight: 500;
+    color: gray;
+    min-width: 1400px;
 }

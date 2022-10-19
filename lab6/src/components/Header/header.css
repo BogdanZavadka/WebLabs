@@ -11,29 +11,34 @@
 ul {
     display: flex;
     gap: 70px;
-    margin-left: 300px;
+    margin-left: 350px;
 }
 
 li {
     display: block;
+}
 
+li>* {
+    text-decoration: none;
+    color: gray;
 }
 
 .shop-name {
     margin-top: 20px;
+    font-size: 30px;
 }
 
-button {
-    height: 40px;
-    background-color: gray;
-    border: 0;
-    border-radius: 5px;
-    color: white;
-    font-size: large;
-    font-weight: 700;
-    margin: 20px 300px;
-}
+
 
 .header>* {
     min-width: 110px;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+.Header {
+    position: fixed;
+    background-color: white;
 }

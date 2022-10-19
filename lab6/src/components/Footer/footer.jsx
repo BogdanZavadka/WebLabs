@@ -4,12 +4,16 @@ import Insta from '../../images/insta.svg'
 
 function footer() {
     return (
-        <div className='footer'>
-            <div className='socials'>
-                <img src={Facebook} alt="fb" className='social-medias' />
-                <img src={Insta} alt="Inst" className='social-medias' />
+        <div>
+            <hr />
+            <div className='store'>Cat store</div>
+            <div className='footer'>
+                <div className='socials'>
+                    <img src={Facebook} alt="fb" className='social-medias' />
+                    <img src={Insta} alt="Inst" className='social-medias' />
+                </div>
+                <div className="copyright">Copyright @ 2022. All right reserved</div>
             </div>
-            <div className="copyright">Copyright @ 2022</div>
         </div>
     )
 }

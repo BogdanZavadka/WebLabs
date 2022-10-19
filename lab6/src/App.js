@@ -1,15 +1,29 @@
 import './App.css'
 import Header from './components/Header/header.jsx'
-import Main from './components/Main/main.jsx'
+import Home from './components/Home/home.jsx'
 import Footer from './components/Footer/footer.jsx'
+import Catalog from './components/Catalog/catalog.jsx'
+import React from "react"
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/catalog' element={<Catalog />} />
+          {/* // <Main />
+        // <Footer /> */}
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
