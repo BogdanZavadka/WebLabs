@@ -3,6 +3,7 @@ import Header from './components/Header/header.jsx'
 import Home from './components/Home/home.jsx'
 import Footer from './components/Footer/footer.jsx'
 import Catalog from './components/Catalog/catalog.jsx'
+import Item from './components/Item/item.jsx'
 import React from "react"
 import {
   BrowserRouter as Router,
@@ -18,8 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/catalog' element={<Catalog />} />
-          {/* // <Main />
-        // <Footer /> */}
+          <Route path='/item' element={<Item />} />
         </Routes>
         <Footer />
       </div>
