@@ -1,0 +1,44 @@
+.header {
+    margin: 10px 60px;
+    font-size: 25px;
+    font-weight: 500;
+    color: gray;
+    min-width: 100vw;
+    display: flex;
+    justify-content: start;
+}
+
+ul {
+    display: flex;
+    gap: 70px;
+    margin-left: 350px;
+}
+
+li {
+    display: block;
+}
+
+li>* {
+    text-decoration: none;
+    color: gray;
+}
+
+.shop-name {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+
+
+.header>* {
+    min-width: 110px;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+.Header {
+    position: fixed;
+    background-color: white;
+}
