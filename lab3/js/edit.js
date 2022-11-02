@@ -17,8 +17,8 @@ getCats().then((gotCats) => {
         cats.push(catItem);
     }
     console.log(cats, itemIndex);
-    editTitle.value = cats[parseInt(itemIndex)].title;
-    editWeight.value = cats[parseInt(itemIndex)].weight;
+    editTitle.value = cats[parseInt(itemIndex) - 1].title;
+    editWeight.value = cats[parseInt(itemIndex) - 1].weight;
 })
 
 editButton.addEventListener('click', (event) => {
@@ -26,7 +26,7 @@ editButton.addEventListener('click', (event) => {
     let editedWeight = editWeight.value;
     let editedTitle = editTitle.value;
     let cat = {
-        id: itemIndex,
+        id: itemIndex - 1,
         title: editedTitle,
         weight: editedWeight
     }

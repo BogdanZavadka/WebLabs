@@ -13,7 +13,7 @@ const baseRequest = async ({ urlPath = '', method = 'GET', body = null }) => {
         }
         return await fetch(`${BASE_URL}${urlPath}`, reqParams);
     } catch (error) {
-
+        console.log('Oops, error has occured');
     }
 }
 

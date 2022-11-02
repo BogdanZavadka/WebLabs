@@ -40,6 +40,7 @@ select {
     background-image: url('../../images/background.jpg');
     background-repeat: repeat, repeat;
     padding-top: 120px;
+    min-height: 90vh;
 }
 
 .view-more,
