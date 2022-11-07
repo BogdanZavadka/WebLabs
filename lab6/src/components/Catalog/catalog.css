@@ -1,0 +1,65 @@
+.catalog {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 170px;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.cat-toy {
+    width: 150px;
+    height: 300px;
+    object-fit: fill;
+    margin-top: 5px;
+}
+
+.block {
+    width: 200px;
+    height: 470px;
+    background-color: rgb(204, 201, 201);
+    border-radius: 6px;
+}
+
+.block button {
+    border: 0;
+    border-radius: 5px;
+    background-color: gray;
+    width: 100px;
+    height: 30px;
+    margin: 20px 10px;
+    font-size: large;
+}
+
+select {
+    width: 300px;
+    height: 50px;
+}
+
+.Catalog {
+    background-image: url('../../images/background.jpg');
+    background-repeat: repeat, repeat;
+    padding-top: 120px;
+    min-height: 90vh;
+}
+
+.view-more,
+.apply {
+    border: 0;
+    border-radius: 5px;
+    background-color: gray;
+    width: 100px;
+    height: 30px;
+    font-size: x-large;
+    margin-left: 100px;
+}
+
+input {
+    width: 200px;
+    height: 30px;
+    margin-left: 200px;
+}
+
+.description {
+    height: 50px;
+}
