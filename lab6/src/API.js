@@ -9,7 +9,7 @@ async function baseRequest({ urlPath = '', method = 'GET' }){
 }
 
 export async function getToys(sortBy = null, sortOrder = null){
-    if(sortOrder || sortOrder !== 'Sorting order' || sortBy|| sortBy !== 'Sort by'){
+    if(sortOrder && sortOrder !== 'Sorting order' && sortBy && sortBy !== 'Sort by'){
         return await baseRequest({urlPath: `/${sortBy}/${sortOrder}`})}
     else {return await baseRequest({})}
 }

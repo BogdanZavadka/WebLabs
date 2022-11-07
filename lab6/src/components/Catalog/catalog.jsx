@@ -8,6 +8,7 @@ function Catalog() {
     const [searchValue, setSearchValue] = useState('');
     const [sortProps, setSortProps] = useState({ sortBy: '', sortingOrder: '' })
 
+
     return (
         <div className='Catalog'>
             <select name="Filter 1" id="select1" onChange={(value) => setSortBy(value.target.value)}>

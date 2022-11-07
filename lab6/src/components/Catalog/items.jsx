@@ -13,10 +13,9 @@ function Items(props) {
     const [loading, setLoading] = useState(true);
     setTimeout(() => {
         setLoading(false);
-    }, 3000);
+    }, 1000);
     useEffect(() => {
         getToys(sortBy, sortOrder).then(res => {
-            console.log(sortBy, sortOrder);
             let itemList = [];
             for (let i of res.data.cat) {
                 itemList.push({id: i[0], description: i[1], price: i[2]})
@@ -31,7 +30,7 @@ function Items(props) {
             <div>Cat toy</div>
             <div className='description'>{item.description}</div>
             <div>Price: {item.price}hrn</div>
-            <Link to='/item' state={{price: item.price, description: item.description}}>
+            <Link to='/item' state={{id: item.id, price: item.price, description: item.description}}>
                 <button className='view-more'>View more</button>
             </Link>
         </div>);
