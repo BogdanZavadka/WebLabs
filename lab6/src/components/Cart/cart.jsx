@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import './cart.css'
 import cat_toy from "../../images/cat_toy_smol.jpg";
 import {addItem, removeItem} from "../../storage/slice";
+import {Link} from "react-router-dom";
 
 export default function Cart() {
     const cart = useSelector(state => state.cart);
@@ -17,7 +18,7 @@ export default function Cart() {
     if (cart.items.length === 0) {
         return (<div className='Cart'></div>)
     } else {
-        for(let i of cart.items){
+        for (let i of cart.items) {
             totalPrice += i.amount * i.price;
         }
         let itemsList = itemObjectList.map((item) => {
@@ -39,6 +40,14 @@ export default function Cart() {
         return (<div className='Cart'>
                 <div>{itemsList}</div>
                 <div className='total-price'>Total price: {totalPrice} hrn</div>
+                <div className='cart-buttons'>
+                    <Link to='/catalog'>
+                        <button>Back to catalog</button>
+                    </Link>
+                    <Link to='/checkout'>
+                        <button>Continue</button>
+                    </Link>
+                </div>
             </div>
         )
     }

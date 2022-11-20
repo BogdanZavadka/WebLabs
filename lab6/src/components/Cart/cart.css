@@ -43,6 +43,20 @@
     margin-top: 30px;
 }
 
+.cart-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 700px;
+}
+.cart-buttons button {
+    border: 0;
+    border-radius: 5px;
+    background-color: gray;
+    width: 150px;
+    font-size: large;
+    margin-top: 30px;
+}
+
 .Cart .amount {
     font-size: 30px;
     margin-top: 30px;

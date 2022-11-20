@@ -11,6 +11,8 @@ import {
   Routes
 } from "react-router-dom";
 import Cart from "./components/Cart/cart";
+import Checkout from "./components/Checkout/checkout";
+import Success from "./components/Checkout/success";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path='/catalog' element={<Catalog />} />
           <Route path='/item' element={<Item />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/checkout' element={<Checkout />} />
+          <Route path='/success' element={<Success />} />
         </Routes>
         <Footer />
       </div>
