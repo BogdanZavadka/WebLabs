@@ -1,0 +1,13 @@
+.cat-toy {
+    width: 150px;
+    height: 300px;
+    object-fit: fill;
+    margin-top: 5px;
+}
+
+.block-home {
+    width: 200px;
+    max-height: 400px;
+    background-color: rgb(204, 201, 201);
+    border-radius: 6px;
+}

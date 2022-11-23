@@ -1,0 +1,89 @@
+form {
+    padding-top: 100px;
+    min-height: 70vh;
+    background-image: url('../../images/background.jpg');
+    background-repeat: repeat, repeat;
+    gap: 50px;
+}
+
+form h1 {
+    margin-left: 35vw;
+}
+
+input {
+    display: block;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 33vw;
+}
+
+label {
+    display: block;
+    margin-left: 33vw;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.checkout-buttons button {
+    border: 0;
+    border-radius: 5px;
+    background-color: gray;
+    width: 170px;
+    height: 50px;
+    font-size: x-large;
+    margin-left: 100px;
+}
+
+.checkout-buttons {
+    margin-top: 50px;
+    margin-left: 330px;
+    padding-bottom: 100px;
+    display: flex;
+    gap: 100px;
+}
+
+.Checkout .error {
+    background-color: #FFA390;
+    border-radius: 8px;
+    width: 330px;
+    margin-top: 8px;
+    margin-left: 35vw;
+}
+
+.Success {
+    background-image: url('../../images/background.jpg');
+    background-repeat: repeat, repeat;
+    padding-top: 150px;
+}
+
+.Success img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.Success h1 {
+    padding-top: 50px;
+    margin: auto;
+}
+
+.success-info {
+    font-size: 23px;
+}
+
+.Success button {
+    border: 0;
+    border-radius: 5px;
+    background-color: gray;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Checkout .input-obj {
+    min-height: 100px;
+}
