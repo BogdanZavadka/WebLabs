@@ -2,7 +2,7 @@ import {createSlice} from "@reduxjs/toolkit";
 
 const cartSlice = createSlice({
     name: 'Cart',
-    initialState: {items: []},
+    initialState: {items: [], isLogged: false},
     reducers: {
         addItem(state, action){
             const itemIndex = state.items.findIndex(item => item.id === action.payload.id);
@@ -23,8 +23,11 @@ const cartSlice = createSlice({
             if(state.items[itemIndex].amount === 0){
                 state.items.splice(itemIndex, 1);
             }
+        },
+        setIsLogged(state, action){
+            state.isLogged = action.payload;
         }
     }
 });
-export const {addItem, removeItem} = cartSlice.actions;
+export const {addItem, removeItem, setIsLogged} = cartSlice.actions;
 export default cartSlice.reducer;

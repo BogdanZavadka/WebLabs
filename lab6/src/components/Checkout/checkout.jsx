@@ -54,7 +54,7 @@ export default function Checkout() {
             navigate('/success')
         }}>
             {() => (
-                <Form>
+                <Form className='Checkout'>
                     <h1>Checkout</h1>
                     <TextInput label='Name' name='name' type='text' placeholder='Enter name...'/>
                     <TextInput label='Surname' name='surname' type='text' placeholder='Enter surname...'/>
